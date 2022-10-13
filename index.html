@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Project Page Template</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="title", style="padding-top: 25pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      TaylorSwiftNet: Taylor Driven Temporal Modeling for Swift Future Frame Prediction
+    </div>
+     <p style="font-size: 22px; text-align: center; color: #2828e1">(BMVC 2022)</p>
+  </div>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="#" target="_blank">Saber Pourheydari</a><sup><strong style="font-size: 18px">*</strong>1</sup>,&nbsp;
+    <a href="#" target="_blank">Emad Bahrami</a><sup><strong style="font-size: 18px">*</strong>1</sup>,&nbsp;
+    <a href="#" target="_blank">Mohsen Fayyaz</a><sup><strong style="font-size: 18px">*</strong>1,2</sup>,&nbsp;</br>
+    <a href="#" target="_blank">Gianpiero Francesca</a><sup>3</sup>,&nbsp;
+    <a href="#" target="_blank">Mehdi Noroozi</a><sup>4</sup>,&nbsp;
+    <a href="#" target="_blank">Juergen Gall</a><sup>1</sup>
+  </div>
+  <div class="institution">
+    <sup>1</sup> University of Bonn,&nbsp <sup>2</sup> Microsoft,&nbsp <sup>3</sup> Toyota Motor Europe,&nbsp <sup>4</sup> Samsung
+AI
+  </div>
+   <p style="text-align: center; color: black; font-size: 15px"><strong>* denotes equal contribution.</strong></strong></p>
+  <div class="link">
+    <a href="https://arxiv.org/abs/2110.14392" target="_blank">[Paper]</a>&nbsp;
+    <a href="#" target="_blank">[Code (coming soon)]</a>
+  </div>
+  <div class="teaser">
+    <img src="assets/Teaser_Img_TaylorSwiftNet-1.jpg">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+While recurrent neural networks (RNNs) demonstrate outstanding capabilities for future video
+frame prediction, they model dynamics in a discrete time space, i.e., they predict the frames sequen-
+tially with a fixed temporal step. RNNs are therefore prone to accumulate the error as the number of
+future frames increases. In contrast, partial differential equations (PDEs) model physical phenomena
+like dynamics in a continuous time space. However, the estimated PDE for frame forecasting needs to
+be numerically solved, which is done by discretization of the PDE and diminishes most of the advan-
+tages compared to discrete models. In this work, we, therefore, propose to approximate the motion in
+a video by a continuous function using the Taylor series. To this end, we introduce TaylorSwiftNet, a
+novel convolutional neural network that learns to estimate the higher order terms of the Taylor series
+for a given input video. TaylorSwiftNet can swiftly predict future frames in parallel and it allows to
+change the temporal resolution of the forecast frames on-the-fly. The experimental results on various
+datasets demonstrate the superiority of our model.
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+  <div class="title">Results</div>
+  <div class="body">
+
+    <!-- Adjust the number of rows and columns (EVERY project differs). -->
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="assets/qual_img-1.jpg" width="90%"></td>
+      </tr>
+    </table>
+
+    <!-- Adjust the frame size based on the demo. -->
+    <div style="position: relative; padding-top: 50%; margin: 20pt 0; text-align: center;">
+      <iframe src="assets/qualitative_results.mp4" frameborder=0
+              style="position: absolute; top: 2.5%; left: 2.5%; width: 95%; height: 100%;"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<!-- === Result Section Ends === -->
+
+
+<!-- === Reference Section Starts === -->
+<div class="section">
+  <div class="bibtex">BibTeX</div>
+<pre>
+  @InProceedings{Taylor_BMVC22,
+  author    =  {Saber Pourheydari, Emad Bahrami, Mohsen Fayyaz, Gianpiero Francesca, Mehdi Noroozi, Juergen Gall},
+  title     =  {TaylorSwiftNet: Taylor Driven Temporal Modeling for Swift Future Frame Prediction},
+  booktitle =  {British Machine Vision Conference (BMVC)},
+  year      =  {2022}
+}
+
+</pre>
+
+  <!-- BZ: we should give other related work enough credits, -->
+  <!--     so please include some most relevant work and leave some comment to summarize work and the difference. -->
+
+</div>
+<!-- === Reference Section Ends === -->
+
+<div class="section">
+    <div class="title">Acknowledgements</div>
+    <div class="body" style="font-size: 17px">
+        This template was originally made by <a href="https://github.com/genforce/genforce.github.io" style="color: purple">GenForce</a>.
+    </div>
+</div>
+
+</body>
+</html>
